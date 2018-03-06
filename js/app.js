@@ -6,12 +6,12 @@ var Enemy = function(x,y) {
     this.sprite = 'images/enemy-bug.png';
 
     //x and y coordinates:
-    this.x = x;
-    this.y = y;
+    //this.x = x;
+    //this.y = y;
 
     //speed of the bugs with Math.random() from
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-    this.speed = Math.floor((Math.random()*200)+100);
+    //this.speed = Math.floor((Math.random()*200)+100);
 };
 
 // Update the enemy's position, required method for game
@@ -21,12 +21,13 @@ Enemy.prototype.update = function(dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    if(this.x <= 505) {  //canvas.width = 505
+   /* if(this.x <= 505) {  //canvas.width = 505
         this.x = this.x + this.speed * dt;
     } else {
         this.x = -2;
-    }
+    }*/
 };
+
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
