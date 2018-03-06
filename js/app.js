@@ -9,8 +9,6 @@ var Enemy = function(x,y) {
      this.x = x;
      this.y = y;
 
-     
-
     //speed of the bugs - Math.random()
     this.speed = Math.floor((Math.random()*150)+100);
 };
@@ -40,7 +38,7 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 var Player = function() {
-    this.sprite = 'images/char-princess-girl.png';
+    this.sprite = 'images/char-boy.png';
     this.x = 150;
     this.y = 300;
     
